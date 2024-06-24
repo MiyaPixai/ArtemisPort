@@ -1,32 +1,20 @@
-Artemis
+Unofficial Artemis Ports
 ========
-[![Discord](https://discordapp.com/api/guilds/394189072635133952/widget.png)](https://discord.gg/ve49m9J)
-[![CurseForge](https://cf.way2muchnoise.eu/short_wynntils.svg)](https://www.curseforge.com/minecraft/mc-mods/wynntils)
-[![Modrinth](https://img.shields.io/modrinth/dt/Wynntils?label=modrinth)](https://modrinth.com/mod/wynntils)
-[![GitHub](https://img.shields.io/github/downloads/Wynntils/Artemis/total?logo=github)](https://github.com/Wynntils/Artemis/releases)
+[![GitHub](https://img.shields.io/github/downloads/MiyaPixai/ArtemisPort/total?logo=github)](https://github.com/MiyaPixai/ArtemisPort/releases)
 [![License](https://img.shields.io/badge/license-LGPL%203.0-green.svg)](https://github.com/Wynntils/Artemis/blob/main/LICENSE)
 
-<div align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Artemis.png" width=20%>
-
-*(Image in public domain)*
-</div>
-
-> Artemis is the greek goddess of hunting and the moon, born of Zeus and Leto, twin of Apollo.
-
-Artemis is a rewrite of **[Wynntils](https://github.com/Wynntils/Wynntils)** (informally referred to as "Legacy") in 1.20.2 using Architectury, to support **Fabric** and **Forge**.
+This is an unofficial port of [Artemis](https://github.com/Wynntils/Artemis) to other minecraft versions not currently supported by the mod.
 
 Downloading a release
 ========
-You can download the latest build from our [releases page](https://github.com/Wynntils/Artemis/releases). You can also download the latest build from our [Modrinth Page](https://modrinth.com/mod/wynntils) and [CurseForge](https://www.curseforge.com/minecraft/mc-mods/wynntils).
+You can download the latest builds from the [releases page](https://github.com/MiyaPixai/ArtemisPort/releases).
 
-Pull Requests
+Issues
 ========
-All pull requests are welcome. We'll analyse it and if we determine it should a part of the mod, we'll accept it. Note that the process of a pull request getting merged here is likely more strenuous than legacy. To begin, one pull request could be porting features from legacy.
+Please fill issues you encounter with ported versions [here](https://github.com/MiyaPixai/ArtemisPort/issues) and NOT to the Artemis github.
+While I try to test releases as much as I can, I cannot test everything and issues not present in Artemis may slip in ported versions.
 
-We welcome all forms of assistance. =)
-
-**Make sure you set the title of your pull request according to the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) specification. Otherwise, your pull request won't be visible in release logs, and will fail to auto-build.**
+If you'd like to request for a specific version not supported by either Artemis or Wynntils, feel free to file an issue here.
 
 Workspace Setup
 ========
@@ -70,6 +58,6 @@ The project has [Vineflower for Loom](https://github.com/Juuxel/loom-vineflower)
 License
 ========
 
-Artemis is licensed under the license [GNU Lesser General Public License v3.0](https://github.com/Wynntils/Artemis/blob/main/LICENSE)
+Artemis and therefor, ArtemisPort is licensed under the license [GNU Lesser General Public License v3.0](https://github.com/MiyaPixai/ArtemisPort/blob/main/LICENSE)
 
 Unless specified otherwise, All the assets **are over Wynntils domain © Wynntils**.
