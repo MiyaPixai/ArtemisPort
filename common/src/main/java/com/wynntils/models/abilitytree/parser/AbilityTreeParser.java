@@ -1,5 +1,5 @@
 /*
- * Copyright © Wynntils 2023.
+ * Copyright © Wynntils 2023-2024.
  * This file is released under LGPLv3. See LICENSE for full license details.
  */
 package com.wynntils.models.abilitytree.parser;
@@ -48,7 +48,7 @@ public final class AbilityTreeParser {
         } else {
             actualName = nameStyledText.iterate((part, changes) -> {
                 // The part which is bolded is the actual name of the ability
-                if (!part.getPartStyle().isBold()) {
+                if (!part.getPartStyle().getStyle().isBold()) {
                     changes.clear();
                 }
 
