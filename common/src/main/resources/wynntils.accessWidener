@@ -35,7 +35,6 @@ accessible field net/minecraft/client/gui/screens/inventory/AbstractContainerScr
 accessible field net/minecraft/client/gui/screens/inventory/AbstractContainerScreen titleLabelY I
 accessible field net/minecraft/client/gui/screens/inventory/AbstractContainerScreen topPos I
 accessible field net/minecraft/client/renderer/entity/ItemRenderer textureManager Lnet/minecraft/client/renderer/texture/TextureManager;
-accessible field net/minecraft/client/resources/DownloadedPackSource serverPack Lnet/minecraft/server/packs/repository/Pack;
 accessible field net/minecraft/network/protocol/game/ClientboundBossEventPacket$AddOperation name Lnet/minecraft/network/chat/Component;
 accessible field net/minecraft/network/protocol/game/ClientboundBossEventPacket$UpdateNameOperation name Lnet/minecraft/network/chat/Component;
 accessible field net/minecraft/world/entity/Entity DATA_CUSTOM_NAME Lnet/minecraft/network/syncher/EntityDataAccessor;
@@ -56,7 +55,7 @@ accessible method net/minecraft/client/renderer/RenderType create (Ljava/lang/St
 accessible method net/minecraft/client/renderer/RenderType create (Ljava/lang/String;Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;IZZLnet/minecraft/client/renderer/RenderType$CompositeState;)Lnet/minecraft/client/renderer/RenderType$CompositeRenderType;
 accessible method net/minecraft/client/renderer/blockentity/BeaconRenderer renderPart (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;FFFFIIFFFFFFFFFFFF)V
 accessible method net/minecraft/client/renderer/entity/EntityRenderer renderNameTag (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/network/chat/Component;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
-accessible method net/minecraft/client/resources/DownloadedPackSource checkHash (Ljava/lang/String;Ljava/io/File;)Z
+accessible method net/minecraft/client/resources/server/DownloadedPackSource tryParseSha1Hash (Ljava/lang/String;)Lcom/google/common/hash/HashCode;
 accessible method net/minecraft/network/chat/Style <init> (Lnet/minecraft/network/chat/TextColor;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lnet/minecraft/network/chat/ClickEvent;Lnet/minecraft/network/chat/HoverEvent;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)V
 accessible method net/minecraft/server/packs/FilePackResources <init> (Ljava/lang/String;Lnet/minecraft/server/packs/FilePackResources$SharedZipFileAccess;ZLjava/lang/String;)V
 accessible method net/minecraft/server/packs/FilePackResources$SharedZipFileAccess <init> (Ljava/io/File;)V
