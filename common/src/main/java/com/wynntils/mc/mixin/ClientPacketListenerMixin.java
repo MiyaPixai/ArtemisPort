@@ -379,7 +379,7 @@ public abstract class ClientPacketListenerMixin extends ClientCommonPacketListen
             // Signal loading complete to the loading screen,
             // or else we are stuck in an "infinite" loading state
             if (McUtils.mc().screen instanceof ReceivingLevelScreen receivingLevelScreen) {
-                receivingLevelScreen.loadingPacketsReceived();
+                receivingLevelScreen.onClose();
             }
         }
     }
@@ -442,7 +442,7 @@ public abstract class ClientPacketListenerMixin extends ClientCommonPacketListen
                     packet.chatType().resolve(this.registryAccess).get();
 
             this.minecraft.getChatListener().handlePlayerChatMessage(playerChatMessage, playerInfo.getProfile(), bound);
-            this.messageSignatureCache.push(playerChatMessage);
+            //            this.messageSignatureCache.push(playerChatMessage);
 
             ci.cancel();
         }
@@ -492,11 +492,8 @@ public abstract class ClientPacketListenerMixin extends ClientCommonPacketListen
     private void handleSetScore(ClientboundSetScorePacket packet, CallbackInfo ci) {
         if (!isRenderThread()) return;
 
-        ScoreboardSetScoreEvent event = new ScoreboardSetScoreEvent(
-                StyledText.fromString(packet.getOwner()),
-                packet.getObjectiveName(),
-                packet.getScore(),
-                packet.getMethod());
+        ScoreboardSetScoreEvent event = new ScoreboardSetScoreEvent.Set(
+                StyledText.fromString(packet.owner()), packet.objectiveName(), packet.score());
         MixinHelper.post(event);
     }
 
