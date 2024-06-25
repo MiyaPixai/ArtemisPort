@@ -91,7 +91,6 @@ public final class StyledText implements Iterable<StyledTextPart> {
             parts.addAll(
                     styledTextParts.stream().filter(part -> !part.isEmpty()).toList());
         }
-
         return fromParts(parts);
     }
 
@@ -125,12 +124,12 @@ public final class StyledText implements Iterable<StyledTextPart> {
         List<HoverEvent> hoverEvents = new ArrayList<>();
 
         for (StyledTextPart part : parts) {
-            ClickEvent clickEvent = part.getPartStyle().getClickEvent();
+            ClickEvent clickEvent = part.getPartStyle().getStyle().getClickEvent();
             if (clickEvent != null && !clickEvents.contains(clickEvent)) {
                 clickEvents.add(clickEvent);
             }
 
-            HoverEvent hoverEvent = part.getPartStyle().getHoverEvent();
+            HoverEvent hoverEvent = part.getPartStyle().getStyle().getHoverEvent();
             if (hoverEvent != null && !hoverEvents.contains(hoverEvent)) {
                 hoverEvents.add(hoverEvent);
             }
